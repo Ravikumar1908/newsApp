@@ -1,0 +1,144 @@
+nav{
+    width: 100%;
+    /* overflow-x: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:var(--gray);
+    background-color: var(--whitePri);
+    box-shadow:0px 10px 10px var(--blackShadow) ;
+    /* position: relative; */
+    padding: 1rem 0rem;
+    position: sticky;
+    z-index: 3;
+    top:0;
+    left: 0;
+}
+.title{
+    /* border: 1px solid red;; */
+    background: var(--linearwhiteToBlack);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: text;
+}
+.navOptionDiv{
+    /* position: relative; */
+    /* border: 1px solid red;; */
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    flex-basis: 50%;
+    color:var(--blackPri);
+}
+.btnBigDiv>button{
+    /* position: relative; */
+}
+.navSubDiv{
+    width: 100vw;
+    padding: 2rem 0rem;
+    position: absolute;
+    display:none ;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--linearwhiteToBlack) !important;
+    background-color: var(--whitePri);
+    left: 0;
+}
+.navOptionDiv button{
+    min-width: fit-content;
+}
+.btnBigDiv:hover .navSubDiv{
+    display: flex;
+    gap:1rem;
+
+}
+
+
+.MOptionBtn{
+    display: none;
+  }
+  .MmenuDiv {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: var(--blackPri);
+    z-index: 34;
+  }
+
+
+  .MnavOptionDiv {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+  }
+
+.navRight{
+    display: flex;
+    width:fit-content;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+.navRight>*{
+    min-width: fit-content;
+    flex-basis: 50%;
+}
+
+
+.searchDiv{
+    z-index: 1;
+    width: 80vw;
+    position: fixed;
+    left:50%;
+    bottom: 5%;
+    max-width: 900px;
+    transform: translateX(-50%);
+    border-radius: 50rem;
+    
+}
+.searchDiv input{
+
+    background-color: var(--whiteShadow);
+    border-radius: 2rem;
+    backdrop-filter: blur(10px) saturate(3);
+    position: relative;
+    outline: none;
+    color:var(--whitePri);
+    font-size: 20px;
+    width: 100%;
+    overflow: hidden;
+    height: 3rem;
+    border: 1px solid var(--primary);
+    padding:0rem 1rem;
+    background-color: var(--blackPri);
+}
+.searchDiv input::placeholder{
+    color:var(--primary);
+}
+.searchDiv:hover{
+    transition: all ease 300ms;
+    box-shadow: 0px 0px 10px var(--blackPri);
+} 
+ .searchIcon{
+    position: absolute;
+    right: 8%;
+    top:50%;
+    transform: translateY(-50%);
+} 
+
+
+
+
+.goToTopDiv{
+    position: absolute;
+    right: 5vw;
+    width: 50px;
+    background-color: red;
+    height: 50px;
+}

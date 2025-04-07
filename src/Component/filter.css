@@ -1,0 +1,41 @@
+.fitlerDiv{
+    position: relative !important;
+}
+/* .filterDiv .searchDiv{
+    background-color: red;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 100px;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 50rem;
+    
+}
+.filterDiv .searchDiv input{
+    background-color: var(--whiteShadow);
+    border-radius: 2rem;
+    backdrop-filter: blur(10px) saturate(3);
+    position: relative;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    overflow: hidden;
+    height: 3rem;
+    border: none;
+    padding:0rem 1rem;
+}
+.searchDiv input::placeholder{
+    color:var(--blackPri);
+}
+.searchDiv:hover{
+    transition: all ease 300ms;
+    box-shadow: 0px 0px 10px var(--blackPri);
+}
+.searchIcon{
+    position: absolute;
+    right: 4%;
+    top:50%;
+    transform: translateY(-50%);
+} */

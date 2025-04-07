@@ -1,0 +1,92 @@
+*{
+  /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+hr{
+  height: .18em;
+  background-color: var(--primary);
+  outline: none;
+  border: none;
+}
+body{
+  width: 100vw;
+  --primary:gold;
+  --whitePri:#fff;
+  --whiteShadow:#ffffff20;
+  --gray:gray;
+  --blackPri:black;
+  --blackShadow:#00000020;
+  --linearwhiteToBlack: linear-gradient(90deg, rgb(0, 0, 253) 0%, rgba(73,73,73,1) 58%, rgb(238, 0, 0) 100%);
+}
+.colorText{
+  background: var(--linearwhiteToBlack);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: text;
+}
+.darkMode{
+  --whitePri: black!important;
+  --whiteShadow:#ffffff20 !important;
+  --blackPri:white !important;
+  --blackShadow:#ffffff20 !important;
+  --linearwhiteToBlack: linear-gradient(90deg, rgb(132, 132, 240) 0%, rgb(255, 255, 255) 58%, rgb(216, 138, 138) 100%) !important;
+}
+button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color:var(--black);
+  background-color: var(--blackShadow);
+  font-size: clamp(1rem,16px, 2rem);
+  padding:  .4rem ;
+  font-weight: bold;
+  border-radius: .2em;
+}
+.utilityButton{
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color:var(--white);
+  background-color: var(--black) ;
+  font-size: clamp(1rem,16px, 2rem);
+  padding: .4rem;
+  border-radius: .2em;
+}
+.utilityButton:hover{
+  transition: all ease 300ms;
+  background: var(--linearwhiteToBlack);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: text;
+  border-radius: 0;
+  
+}
+/* button:hover{
+    background: var(--linearwhiteToBlack);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: text;
+    transition: all ease 300ms;
+    border-radius: 0;
+  
+} */
+@media screen and (max-width:768px) {
+  
+  nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between !important;
+    padding: .5rem 2rem !important;
+  }
+  .navOptionDiv{
+    display: none !important;
+  }
+  .MOptionBtn{
+    display: flex !important;
+  }
+  
+}

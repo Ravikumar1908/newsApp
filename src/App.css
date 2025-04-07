@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    position: relative !important;
+
+}
+.filterDiv{
+    width: 18vw; 
+    min-width: 200px;
+    background-color: var(--gray);
+    max-height: 100vh;
+    overflow-y: hidden;
+    min-height: fit-content;
+    position: static;
+}
+.cardDiv{
+    flex-grow: 1;
+}
